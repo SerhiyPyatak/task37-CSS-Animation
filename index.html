@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="spades deck">
+      <div class="animate__animated animate__faster card">&spades;6</div>
+      <div class="animate__animated card">&spades;7</div>
+      <div class="animate__animated card">&spades;8</div>
+      <div class="animate__animated card">&spades;9</div>
+      <div class="animate__animated card">&spades;10</div>
+      <div class="animate__animated card">&spades;J</div>
+      <div class="animate__animated card">&spades;Q</div>
+      <div class="animate__animated card">&spades;K</div>
+      <div class="animate__animated card">&spades;A</div>
+    </div>
+    <div class="drum deck">
+      <div class="animate__animated card">&diams;6</div>
+      <div class="animate__animated card">&diams;7</div>
+      <div class="animate__animated card">&diams;8</div>
+      <div class="animate__animated card">&diams;9</div>
+      <div class="animate__animated card">&diams;10</div>
+      <div class="animate__animated card">&diams;J</div>
+      <div class="animate__animated card">&diams;Q</div>
+      <div class="animate__animated card">&diams;K</div>
+      <div class="animate__animated card">&diams;A</div>
+    </div>
+
+    <div class="clubs deck">
+      <div class="animate__animated card">&clubs;6</div>
+      <div class="animate__animated card">&clubs;7</div>
+      <div class="animate__animated card">&clubs;8</div>
+      <div class="animate__animated card">&clubs;9</div>
+      <div class="animate__animated card">&clubs;10</div>
+      <div class="animate__animated card">&clubs;J</div>
+      <div class="animate__animated card">&clubs;Q</div>
+      <div class="animate__animated card">&clubs;K</div>
+      <div class="animate__animated card">&clubs;A</div>
+    </div>
+
+    <div class="hearts deck">
+      <div class="animate__animated card">&hearts;6</div>
+      <div class="animate__animated card">&hearts;7</div>
+      <div class="animate__animated card">&hearts;8</div>
+      <div class="animate__animated card">&hearts;9</div>
+      <div class="animate__animated card">&hearts;10</div>
+      <div class="animate__animated card">&hearts;J</div>
+      <div class="animate__animated card">&hearts;Q</div>
+      <div class="animate__animated card">&hearts;K</div>
+      <div class="animate__animated card">&hearts;A</div>
+    </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script>
+      $(document).ready(
+        $('.card').hover(
+          function () {
+            $(this).addClass('animate__rotateIn');
+          },
+          function () {
+            $(this).removeClass('animate__rotateIn');
+          }
+        )
+      );
+    </script>
+  </body>
+</html>

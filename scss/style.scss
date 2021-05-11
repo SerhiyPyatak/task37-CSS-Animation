@@ -1,0 +1,44 @@
+@import "../node_modules/normalize-scss/sass/normalize/import-now";
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.deck {
+    width:      100%;
+    height:     180px;
+    display:    flex;
+    gap:        10px;
+}
+
+.card {
+    width:      100px;
+    height:     138px;
+    border: 1px solid red;
+    background-color: yellowgreen;
+    position: relative;
+    top:0;
+    font-size:          36px;
+    background-image:   url('../card-suite.jpg');
+    background-size:    100% auto;
+    background-repeat:  no-repeat;
+    color: transparent;
+    cursor: pointer;
+    //--animate-duration: 0.8s;
+    //transition: all .5s ease-in-out;
+}
+
+.hearts > .card:hover, .drum > .card:hover {
+    color: red;
+    background-size: 0px 0px;
+}
+
+.spades > .card:hover, .clubs > .card:hover {
+    color: black;
+    background-size: 0px 0px;
+}
